@@ -312,6 +312,51 @@ body {
   font-weight: 400;
 }
 
+.anim-upwards {
+  -webkit-transform: translate(0, 20px);
+      -ms-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.anim-upwards._watcher-view {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.anim-upwards-2 {
+  -webkit-transform: translate(0, 20px);
+      -ms-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0.4s;
+  -o-transition: all 0.8s ease 0.4s;
+  transition: all 0.8s ease 0.4s;
+}
+
+.anim-upwards-2._watcher-view {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.anim-opasity {
+  opacity: 0.3;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.anim-opasity._watcher-view {
+  opacity: 1;
+}
+
 .header {
   position: relative;
 }
@@ -897,19 +942,22 @@ body {
   opacity: 1;
 }
 
-.banner {
-  margin-top: 3.125rem;
-  background: url("../img/section-3/backgroun-big.jpg") 0 0 no-repeat;
-  background-color: #ffea81;
-  background-size: cover;
-  padding: 20px 20px 20px 250px;
-  width: 100%;
+.banner__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px 20px 20px 250px;
+}
+
+.banner {
+  margin-top: 3.125rem;
+  background: url("../img/section-3/backgroun-big.jpg") 0 0 no-repeat;
+  background-color: #ffea81;
+  background-size: cover;
+  width: 100%;
 }
 
 .banner-text h3 {
@@ -1317,7 +1365,7 @@ body {
     padding-top: 30px;
   }
 
-  .banner {
+  .banner__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
